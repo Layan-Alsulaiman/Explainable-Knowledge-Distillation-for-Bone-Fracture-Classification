@@ -1,0 +1,41 @@
+{
+    "model_architecture": "DenseNet201FracAtlas",
+    "split_name": "OfficialFracture_NonFracture80_12_8",
+    "augmentation": "RandAug",
+    "learning_rate": 1e-05,
+    "dropout_rate": 0.2,
+    "epochs": 100,
+    "best_epoch": 21,
+    "early_stopping_patience": 10,
+    "reduce_lr_patience": 3,
+    "fine_tuning_layers": 10,
+    "normalization_dataset_range": "[0, 1]",
+    "efficientnet_input_range": "[0, 255]",
+    "image_size": [
+        224,
+        224
+    ],
+    "batch_size": 8,
+    "class_weights": {
+        "Non-Fracture": 0.6066121842496285,
+        "Fracture": 2.8449477351916377
+    },
+    "training_distribution": {
+        "Non-Fracture": 2692,
+        "Fracture": 574
+    },
+    "test_accuracy": 0.7590361445783133,
+    "test_precision_fracture": 0.4020618556701031,
+    "test_recall_fracture": 0.639344262295082,
+    "test_f1_fracture": 0.4936708860759494,
+    "test_auc": 0.7952936906418243,
+    "confusion_matrix": {
+        "true_negative": 213,
+        "false_positive": 58,
+        "false_negative": 22,
+        "true_positive": 39
+    },
+    "total_parameters": 18568642,
+    "trainable_parameters": 532802,
+    "inference_ms_per_image": 94.81850374999112
+}

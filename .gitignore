@@ -1,0 +1,22 @@
+# Dataset files
+/dataset/
+
+# Trained model files
+*.keras
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Training outputs
+/checkpoints/
+/models/
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

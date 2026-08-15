@@ -1,0 +1,41 @@
+{
+    "model_architecture": "EfficientNetB6FracAtlas",
+    "split_name": "OfficialFracture_NonFracture80_12_8",
+    "augmentation": "NoAug",
+    "learning_rate": 1e-05,
+    "dropout_rate": 0.2,
+    "epochs": 100,
+    "best_epoch": 19,
+    "early_stopping_patience": 10,
+    "reduce_lr_patience": 3,
+    "fine_tuning_layers": 10,
+    "normalization_dataset_range": "[0, 1]",
+    "efficientnet_input_range": "[0, 255]",
+    "image_size": [
+        528,
+        528
+    ],
+    "batch_size": 8,
+    "class_weights": {
+        "Non-Fracture": 0.6066121842496285,
+        "Fracture": 2.8449477351916377
+    },
+    "training_distribution": {
+        "Non-Fracture": 2692,
+        "Fracture": 574
+    },
+    "test_accuracy": 0.8554216867469879,
+    "test_precision_fracture": 0.6031746031746031,
+    "test_recall_fracture": 0.6229508196721312,
+    "test_f1_fracture": 0.6129032258064516,
+    "test_auc": 0.8406025043856995,
+    "confusion_matrix": {
+        "true_negative": 246,
+        "false_positive": 25,
+        "false_negative": 23,
+        "true_positive": 38
+    },
+    "total_parameters": 41255953,
+    "trainable_parameters": 4618002,
+    "inference_ms_per_image": 95.29800524998677
+}

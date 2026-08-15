@@ -1,0 +1,36 @@
+{
+    "model_architecture": "MobileNetV1FracAtlas",
+    "split_name": "OfficialFracture_NonFracture80_12_8",
+    "augmentation": "NoAug",
+    "learning_rate": 1e-05,
+    "dropout_rate": 0.2,
+    "epochs": 100,
+    "best_epoch": 46,
+    "early_stopping_patience": 10,
+    "reduce_lr_patience": 3,
+    "fine_tuning_layers": 10,
+    "normalization_dataset_range": "[0, 1]",
+    "mobilenet_input_range": "[-1, 1]",
+    "class_weights": {
+        "Non-Fracture": 0.6066121842496285,
+        "Fracture": 2.8449477351916377
+    },
+    "training_distribution": {
+        "Non-Fracture": 2692,
+        "Fracture": 574
+    },
+    "test_accuracy": 0.8072289156626506,
+    "test_precision_fracture": 0.4845360824742268,
+    "test_recall_fracture": 0.7704918032786885,
+    "test_f1_fracture": 0.5949367088607594,
+    "test_auc": 0.8368519750771278,
+    "confusion_matrix": {
+        "true_negative": 221,
+        "false_positive": 50,
+        "false_negative": 14,
+        "true_positive": 47
+    },
+    "total_parameters": 3360834,
+    "trainable_parameters": 1719938,
+    "inference_ms_per_image": 2.663580249993913
+}
