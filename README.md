@@ -6,7 +6,8 @@ Bone fracture classification from X-ray images has become an important applicati
 
 This project investigates **Explainable Knowledge Distillation (ExpKD)**, a framework that combines the efficiency of **Knowledge Distillation (KD)** with the transparency of **Explainable Artificial Intelligence (XAI)**. The objective is to train a lightweight student model that not only mimics the predictive performance of a larger teacher model but also learns to make decisions based on similar clinically relevant image regions.
 
-<img width="2048" height="1024" alt="General Framework" src="https://github.com/user-attachments/assets/6719fc82-49f7-4b9c-b1c3-5bd65def5987" />
+<img width="2048" height="1024" alt="General Framework" src="https://github.com/user-attachments/assets/f07ed2c0-54e4-4e53-8aa9-317208c9abeb" />
+
 
 ---
 
@@ -30,20 +31,18 @@ Knowledge Distillation enables the transfer of knowledge from a powerful teacher
 
 ## Dataset
 
-The project uses multiple publicly available bone fracture X-ray datasets, which are combined into a unified binary classification dataset consisting of:
+The project uses the publicly available bone fracture X-ray dataset FracAtlas, consisting of:
 
 - **Fracture**
 - **Non-Fracture**
-
-The datasets include images from different anatomical regions to improve the diversity and robustness of the model.
 
 ---
 
 ## Repository Contents
 
 ```
-datasets/      Dataset preparation and preprocessing
-notebooks/     Exploratory Data Analysis (EDA)
+dataset/      Dataset preparation, preprocessing, splits
+baselines/     ResNet152V2, DenseNet201, EfficientNetB6, MobileNetV1, MobileNetV2
 README.md
 ```
 
