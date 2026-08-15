@@ -1,0 +1,91 @@
+{
+    "model_architecture": "ResNet152V2FracAtlas",
+    "model_name": "ResNet152V2FracAtlas_OfficialFracture_NonFracture80_12_8_RandAugment_Last10_V2",
+    "split_name": "OfficialFracture_NonFracture80_12_8",
+    "augmentation": "RandAugment",
+    "experiment_version": "V2",
+    "learning_rate": 1e-05,
+    "dropout_rate": 0.2,
+    "epochs": 100,
+    "epochs_run": 12,
+    "best_epoch": 2,
+    "training_minutes": 9.55,
+    "early_stopping_patience": 10,
+    "reduce_lr_patience": 3,
+    "fine_tuning_layers_requested": 10,
+    "fine_tuning_layers_trainable": 10,
+    "normalization_dataset_range": "[0, 1]",
+    "input_preprocessing": "ResNet152V2 ImageNet preprocess_input",
+    "preprocessing_input_restored_range": "[0, 255]",
+    "batch_normalization_backbone_frozen": true,
+    "decision_rule": "softmax argmax",
+    "keras_precision_recall_class": "Fracture (class_id=1)",
+    "class_weights": {
+        "Non-Fracture": 0.6066121842496285,
+        "Fracture": 2.8449477351916377
+    },
+    "training_distribution": {
+        "Non-Fracture": 2692,
+        "Fracture": 574
+    },
+    "test_prevalence": 0.18373493975903615,
+    "test_accuracy": 0.8162650602409639,
+    "test_precision_fracture": 0.5,
+    "test_recall_fracture": 0.32786885245901637,
+    "test_f1_fracture": 0.39603960396039606,
+    "test_auc": 0.7939628576613634,
+    "test_pr_auc": 0.43462573140215593,
+    "keras_evaluate": {
+        "accuracy": 0.8162650465965271,
+        "auc": 0.7945072650909424,
+        "f1_macro": 0.6438456773757935,
+        "f1_score": 0.8005905151367188,
+        "loss": 0.39728379249572754,
+        "precision": 0.5,
+        "recall": 0.32786884903907776
+    },
+    "confusion_matrix": {
+        "true_negative": 251,
+        "false_positive": 20,
+        "false_negative": 41,
+        "true_positive": 20
+    },
+    "total_parameters": 58594690,
+    "trainable_parameters": 3678850,
+    "inference_ms_per_image": 20.538732343744925,
+    "supplementary": {
+        "tuned_threshold": 0.35000000000000003,
+        "test_at_tuned_threshold": {
+            "threshold": 0.35000000000000003,
+            "accuracy": 0.7620481927710844,
+            "precision": 0.38461538461538464,
+            "recall": 0.4918032786885246,
+            "f1": 0.4316546762589928,
+            "balanced_accuracy": 0.6573407537354061
+        },
+        "test_balanced_subsample_argmax": {
+            "accuracy": {
+                "mean": 0.6258196721311476,
+                "std": 0.015782679929483373
+            },
+            "precision": {
+                "mean": 0.8163046534785664,
+                "std": 0.06368394971216215
+            },
+            "recall": {
+                "mean": 0.3278688524590164,
+                "std": 5.551115123125783e-17
+            },
+            "f1": {
+                "mean": 0.4672520275370633,
+                "std": 0.010462807624020022
+            }
+        },
+        "balanced_subsample_n": 122
+    },
+    "saved_files": {
+        "best_model": "/kaggle/working/model_results/ResNet152V2FracAtlas_OfficialFracture_NonFracture80_12_8_RandAugment_Last10_V2/best_model.keras",
+        "final_model": null
+    },
+    "completed": "2026-08-05T20:10:00"
+}
