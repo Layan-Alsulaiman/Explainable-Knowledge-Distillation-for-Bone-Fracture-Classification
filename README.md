@@ -36,6 +36,7 @@ This allows the student to learn both **what to predict** and information about 
 ## Dataset
 
 The experiments use the **FracAtlas** musculoskeletal X-ray dataset.
+https://figshare.com/articles/dataset/The_dataset/22363012
 
 | Class        |    Images |
 | ------------ | --------: |
