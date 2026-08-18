@@ -29,6 +29,8 @@ The EKD objective combines:
 
 This allows the student to learn both **what to predict** and information about **where to focus**.
 
+[General Framework.pdf](https://github.com/user-attachments/files/31172727/General.Framework.pdf)
+
 ---
 
 ## Dataset
