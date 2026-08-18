@@ -29,7 +29,7 @@ The EKD objective combines:
 
 This allows the student to learn both **what to predict** and information about **where to focus**.
 
-<img width="2048" height="1024" alt="General Framework" src="https://github.com/user-attachments/assets/c9fd0275-3a0f-4343-87f7-a3f4cfc47494" />
+<img width="2048" height="1024" alt="General Framework" src="https://github.com/user-attachments/assets/887c7467-f015-4ce8-a466-bef4dbc07d7b" />
 
 ---
 
